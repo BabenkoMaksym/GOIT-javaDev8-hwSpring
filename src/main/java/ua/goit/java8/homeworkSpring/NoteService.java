@@ -1,12 +1,9 @@
 package ua.goit.java8.homeworkSpring;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
-import java.util.HashMap;
+
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 @Service
@@ -28,7 +25,7 @@ public class NoteService {
     }
 
     public void deleteById(long id) {
-       repository.deleteById(id);
+        repository.deleteById(id);
     }
 
     public void update(Note note) {
